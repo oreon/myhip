@@ -1,0 +1,20 @@
+{
+    "jhipsterApp": {
+        "book" : {
+            "home": {
+                "title": "Books",
+                "createLabel": "Create a new Book",
+                "createOrEditLabel": "Create or edit a Book"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Book {{ id }}?"
+            },
+            "detail": {
+                "title": "Book"
+            },
+            "title": "Title",
+            "price": "Price",
+            "author": "author"
+        }
+    }
+}

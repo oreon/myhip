@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+   <changeSet author="jag (generated)" id="1426685956844-1">
+      <addColumn tableName="T_AUTHOR">
+         <column name="join_date" type="date">
+            <constraints nullable="false"/>
+         </column>
+      </addColumn>
+   </changeSet>
+   <changeSet author="jag (generated)" id="1426685956844-2">
+      <addNotNullConstraint columnDataType="date" columnName="birthday" tableName="T_AUTHOR"/>
+   </changeSet>
+</databaseChangeLog>

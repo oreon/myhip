@@ -1,0 +1,57 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "book",
+            "relationshipNameCapitalized": "Book",
+            "relationshipFieldName": "book",
+            "otherEntityName": "book",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Book"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Name",
+            "fieldNameUnderscored": "name",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "2",
+            "fieldValidateRulesMaxlength": 20
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "birthday",
+            "fieldType": "LocalDate",
+            "fieldNameCapitalized": "Birthday",
+            "fieldNameUnderscored": "birthday",
+            "fieldValidate": false
+        },
+        
+        {
+            "fieldId": 3,
+            "fieldName": "joinDate",
+            "fieldType": "LocalDate",
+            "fieldNameCapitalized": "JoinDate",
+            "fieldNameUnderscored": "join_date",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": true,
+    "fieldsContainLocalDate": true,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150318122350",
+    "pagination": "pager",
+    "validation": true
+}

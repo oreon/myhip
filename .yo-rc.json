@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "baseName": "jhipster",
+    "packageName": "com.oreon.jcomm",
+    "packageFolder": "com/oreon/jcomm",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "7",
+    "rememberMeKey": "12884c8154c4243a6332f100f913c7d9328653ea"
+  }
+}

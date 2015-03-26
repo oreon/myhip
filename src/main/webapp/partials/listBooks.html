@@ -1,0 +1,31 @@
+listing all {{message}}
+
+
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th translate="jhipsterApp.book.title">Title</th>
+				<th translate="jhipsterApp.book.price">Price</th>
+				<th translate="jhipsterApp.book.author">author</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="book in books">
+				<td><a ui-sref="bookDetail({id:book.id})">{{book.id}}</a></td>
+				<td>{{book.title}}</td>
+				<td>{{book.price}}</td>
+				<td>{{book.author.name}}</td>
+				<td>
+					<button type="submit" ui-sref="manageBook({id:book.id})"
+						class="btn btn-info">
+						<span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span
+							translate="entity.action.view"> View</span>
+					</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

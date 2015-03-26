@@ -1,0 +1,48 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "author",
+            "relationshipNameCapitalized": "Author",
+            "relationshipFieldName": "author",
+            "otherEntityName": "author",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Author",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "title",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Title",
+            "fieldNameUnderscored": "title",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "price",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Price",
+            "fieldNameUnderscored": "price",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150318122819",
+    "pagination": "pager",
+    "validation": true
+}

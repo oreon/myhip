@@ -1,0 +1,22 @@
+<form name="editBookForm" role="form" novalidate
+				ng-submit="create()" show-validation>
+
+				<input type="text" ng-model="book.title" name="title"
+					required="required">
+
+				<div ng-show="editBookForm.firstName.$invalid">
+					<p class="help-block" ng-show="editBookForm.title.$error.required"
+						translate="entity.validation.required">This field is required.
+					</p>
+				</div>
+
+
+				<input type="text" ng-model="book.price">
+				<h3>BOOK: {{(book.title + " " + book.price )}}</h3>
+
+				<button type="submit" ng-disabled="editBookForm.$invalid"
+					class="btn btn-primary">
+					<span class="glyphicon glyphicon-save"></span>&nbsp;<span
+						translate="entity.action.save">Save</span>
+				</button>
+</form>
